@@ -42,7 +42,9 @@
 
 
         <div class="themebtn">
-            <i class="bx bx-moon change-theme" id="theme-button"></i>
+          
+              <i class="bx bx-moon change-theme" id="theme-button"></i>
+            
             <a href="#">
                 <i class="bx bx-menu" id="menu-icon"></i>
             </a>
@@ -75,13 +77,13 @@
                     work.</p>
             </div>
 
-            <button class="btn_container">
-                <button class="btn btn-color-2">Download CV</button>
-                <button class="btn btn-color-1"">Contact Now</button>
-            </button>
+            <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('/assets/lynn_myat_cv.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact' ">Contact Now </button>
+            </div>
 
             <div id=" socials_container">
-                    <a href="https://github.com/" target="_blank"><i class="ri-github-line social-icon"></i></a>
+                    <a href="https://github.com/yy-mizu" target="_blank"><i class="ri-github-line social-icon"></i></a>
                     <a href="https://www.instagram.com/" target="_blank"><i
                             class="ri-instagram-line social-icon"></i></a>
                     <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-line social-icon"></i></a>
@@ -225,7 +227,7 @@
 
         <div class="hobby_container">
             <div class="hobby_title_container">
-                <p class="title">My other Hobbies</p>
+                <h1 class="title">My other Hobbies</p>
             </div>
            
             <div class="hobbies">
@@ -233,7 +235,7 @@
                     <img src="assets/weights.png" class="hobby_icon exercise">
                     <div class="hobby_desc_container">
                     <p class="hobby_desc">"Working out is my energizing escape, <br>that keeps me strong, happy, and centered.<br>
-                                            (because...who needs stress-relief more than Devs?"</p>
+                                            </p>
                 </div>
                 </div>
 
@@ -324,8 +326,8 @@
 
                     <button class="btn_container">
                         <button class="btn btn-color-2 project_btn1"
-                            onclick="location.href='https://github.com'">Github<i class="ri-github-fill p_icon"></i></button>
-                        <button class="btn btn-color-1 project_btn2">Live Demo</button>
+                            onclick="location.href='https://github.com/yy-mizu'">Github<i class="ri-github-fill p_icon"></i></button>
+                        <button class="btn btn-color-1 project_btn2  onclick="location.href='https://github.com/yy-mizu'">Live Demo</button>
                     </button>
                 </div>
 
@@ -371,33 +373,35 @@
 <section id="contact">
     <p class="section_text_p1">Get In Touch</p>
     <h1 class="title">Contact Me</h1>
-
-    <form action="index.html" method="post" class="contact_form">
-        <div class="input_wrap">
-            <input type="text" class="contact_input" name="First name" placeholder="First Name" required>
-            
-            <i class="ri-profile-line c_icon"></i>
-        </div>
-
-        <div class="input_wrap">
-            <input type="text" class="contact_input" name="Last name" placeholder ="Last Name" required>
-            
-            <i class="ri-profile-line c_icon"></i>
-        </div>
-
-        <div class="input_wrap w-100">
-            <input type="email" class="contact_input" name="Email" placeholder="Email" required>
-            
-            <i class="ri-mail-line c_icon"></i>
-        </div>
-
-        <div class="input_wrap textarea w-100">
-            <textarea name="Message" id="" cols="30" rows="10" class="contact_input" placeholder="Message" required></textarea>
-            
-            <i class="ri-chat-1-line c_icon"></i>
-        </div>
-        <button class="btn btn-color-1">Send Message</button>
-    </form>
+    <div class="contact_container">
+        <form action="index.html" method="post" class="contact_form">
+            <div class="input_wrap">
+                <input type="text" class="contact_input" name="First name" placeholder="First Name" required>
+                
+                <i class="ri-profile-line c_icon"></i>
+            </div>
+    
+            <div class="input_wrap">
+                <input type="text" class="contact_input" name="Last name" placeholder ="Last Name" required>
+                
+                <i class="ri-profile-line c_icon"></i>
+            </div>
+    
+            <div class="input_wrap w-100">
+                <input type="email" class="contact_input" name="Email" placeholder="Email" required>
+                
+                <i class="ri-mail-line c_icon"></i>
+            </div>
+    
+            <div class="input_wrap textarea w-100">
+                <textarea name="Message" id="" cols="30" rows="10" class="contact_input" placeholder="Message" required></textarea>
+                
+                <i class="ri-chat-1-line c_icon"></i>
+            </div>
+            <button class="btn btn-color-1">Send Message</button>
+        </form>
+    </div>
+    
 </section>
     <script src="script.js"></script>
 
